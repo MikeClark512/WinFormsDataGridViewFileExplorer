@@ -1,6 +1,10 @@
 ﻿# About
-The point of this demo is to exercise DataGridView in a way that is similar to Windows Explorer and other popular apps like voidtools Everything.
-I focused on some features specifically:
+This example exercises DataGridView in a way that is similar to Windows Explorer's list view and other popular file listing apps like voidtools Everything.
+
+## Goals
+- Brevity: The non-designer code is intentionally brief, at around 200 lines.
+- Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON), leaving behind any trace of FileSystemInfo.
+- Fluent gestures and responsive behavior
 
 ## Column and Window Resizing
 - The columns should respond to the form window being resized
@@ -34,3 +38,9 @@ I focused on some features specifically:
 - Data selection in this project is assumed to be full-row
 - Only one row is selectable at a time. This met my current needs.
 - The backing data (plus metadata) should be easily retrievable given the current state of user selection
+
+## Future
+- Fluent support for touch-screen gestures
+- Icon support (maybe)
+- Multi-select (maybe)
+- Context menu (maybe)
