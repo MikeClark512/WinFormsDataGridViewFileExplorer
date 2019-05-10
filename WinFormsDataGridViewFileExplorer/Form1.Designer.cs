@@ -53,6 +53,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(628, 335);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellDoubleClick);
+            this.dataGridView1.Enter += new System.EventHandler(this.DataGridView1_Enter);
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView1_KeyDown);
             this.dataGridView1.Leave += new System.EventHandler(this.DataGridView1_Leave);
             // 
@@ -60,10 +61,10 @@
             // 
             this.textBoxOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxOutput.Location = new System.Drawing.Point(134, 379);
+            this.textBoxOutput.Location = new System.Drawing.Point(83, 379);
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.ReadOnly = true;
-            this.textBoxOutput.Size = new System.Drawing.Size(506, 20);
+            this.textBoxOutput.Size = new System.Drawing.Size(557, 20);
             this.textBoxOutput.TabIndex = 3;
             // 
             // labelOutput
@@ -72,9 +73,9 @@
             this.labelOutput.AutoSize = true;
             this.labelOutput.Location = new System.Drawing.Point(12, 382);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(116, 13);
+            this.labelOutput.Size = new System.Drawing.Size(65, 13);
             this.labelOutput.TabIndex = 4;
-            this.labelOutput.Text = "You double clicked on:";
+            this.labelOutput.Text = "Execute file:";
             // 
             // labelInput
             // 

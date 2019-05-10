@@ -44,3 +44,4 @@ This example exercises DataGridView in a way that is similar to Windows Explorer
 - Icon support (maybe)
 - Multi-select (maybe)
 - Context menu (maybe)
+- Inline renaming
