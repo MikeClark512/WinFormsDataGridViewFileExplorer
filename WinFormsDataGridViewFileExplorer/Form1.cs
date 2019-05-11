@@ -127,15 +127,15 @@ namespace WinFormsDataGridViewFileExplorer
 
         private void DataGridView1_Leave(object sender, EventArgs e)
         {
-            //dataGridView1.ClearSelection();
+            dataGridView1.ClearSelection();
         }
 
         private void DataGridView1_Enter(object sender, EventArgs e)
         {
-            if (GetPrimarySelectedValue() == null)
-            {
-                TrySelectFirstRow(); // If there is data in the grid and no selection, make a selection
-            }
+            //if (GetPrimarySelectedValue() == null)
+            //{
+            //    TrySelectFirstRow(); // If there is data in the grid and no selection, make a selection
+            //}
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
