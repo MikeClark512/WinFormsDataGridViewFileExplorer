@@ -1,7 +1,0 @@
-Implements issue #
-
-## Proposed Changes
-
-  -
-  -
-  -
