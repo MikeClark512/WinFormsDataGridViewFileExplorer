@@ -1,4 +1,4 @@
-Addresses issue #
+Issue #
 
 ## Proposed Changes
 
