@@ -8,24 +8,25 @@ This example exercises DataGridView in a way that is similar to Windows Explorer
 
 ## Column and Window Resizing
 - The columns should respond to the form window being resized. (This behavior is questionable. Windows Explorer doesn't do this, and the behavior has pros and cons.)
-- fill all space made available to the control when the parent window resizes
-- The original column widths should be selected in a way that respects the lengths of all the strings in the column
+- Fill all space made available to the control when the parent window resizes. (Also questionable. See above.)
+- The starting column widths should be auto-sized in a way that respects the lengths of all initial strings in the column. (There is some trouble with this -- what if you add more data that's longer, or scroll down to an item that's longer? Also, there are performance concerns with very long lists.)
 - The user should be able to resize the columns.
-- If the window is resized after the columns are resized, the columns should resize proportionally to each other.
+- If the window is resized after the columns are resized, the columns should resize proportionally to each other. (This behavior is questionable. Windows Explorer doesn't do this, and the behavior has pros and cons.)
 
 ## Plain Old Data
-- We should be able to populate the DataGridView programatically.
-- Population of the DataGridView should be done from a "plain old object" and not need any funky database/ADO wiring.
-- We should be able to update the DataGridView while the application is running and not have it look strange.
-- A plain old object class should be retrievable
+- We should be able to populate the DataGridView programatically from a plain data-type object, like a deserialized JSON object.
+- Population of the DataGridView's metadata (like columns) and data (like cell contents) should not need any funky database/ADO wiring.
+- We should be able to update the DataGridView while the application is running and not get bad behaviors like the DGV scrolling to the top or bottom (so the user loses their place), or redraw issues.
+- The plain old object backing the DGV should be retrievable from the DGV
 
 ## Sorting
 - User-controlled column sorting
 - Click a column header to switch between sorting by that column: ascending/descending
 
 ## Well-known keyboard gestures should work as expected
-- Keys.enter to open directory/file and confirm input
-- Up and down arrows should move focus between nearby controls in away similar to TABing
+- Press <kbd>enter</kbd> to open the currently selected row (directory/file)
+- Press <kbd>enter</kbd> to confirm input ("OK") in single-line text boxes and dialogs, etc.
+- Up and down arrows should move focus between nearby controls in away similar to <kbd>Tab</kbd>
 - Explorer-isms: Alt-Up to "cd .."
 
 ## Well-known mouse gestures should work as expected
