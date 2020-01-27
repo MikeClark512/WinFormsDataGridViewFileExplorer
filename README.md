@@ -1,6 +1,8 @@
 ﻿# About
 This example exercises DataGridView in a way that is similar to Windows Explorer's list view and other popular file listing apps like voidtools Everything.
 
+![main](https://github.com/MikeClark512/WinFormsDataGridViewFileExplorer/blob/master/screenshot.png)
+
 ## Goals
 - Brevity: The non-designer code is intentionally brief, at around 200 lines.
 - Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON). There is no direct depenency on FileSystemInfo.
