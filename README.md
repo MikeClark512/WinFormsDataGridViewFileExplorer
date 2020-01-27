@@ -7,7 +7,7 @@ This example exercises DataGridView in a way that is similar to Windows Explorer
 - Fluent gestures and responsive behavior
 
 ## Column and Window Resizing
-- The columns should respond to the form window being resized
+- The columns should respond to the form window being resized (debatable, Windows Explorer doesn't do this, and it has pros and cons)
 - fill all space made available to the control when the parent window resizes
 - The original column widths should be selected in a way that respects the lengths of all the strings in the column
 - The user should be able to resize the columns.
