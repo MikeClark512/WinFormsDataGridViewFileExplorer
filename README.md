@@ -3,7 +3,7 @@ This example exercises DataGridView in a way that is similar to Windows Explorer
 
 ## Goals
 - Brevity: The non-designer code is intentionally brief, at around 200 lines.
-- Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON). There is no depenency on FileSystemInfo.
+- Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON). There is no direct depenency on FileSystemInfo.
 - Fluent gestures and responsive behavior
 
 ## Column and Window Resizing
