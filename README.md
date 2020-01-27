@@ -3,11 +3,11 @@ This example exercises DataGridView in a way that is similar to Windows Explorer
 
 ## Goals
 - Brevity: The non-designer code is intentionally brief, at around 200 lines.
-- Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON), leaving behind any trace of FileSystemInfo.
+- Plain objects: The code should be easily portable to work with any plain old objects (e.g. deserialized JSON). There is no depenency on FileSystemInfo.
 - Fluent gestures and responsive behavior
 
 ## Column and Window Resizing
-- The columns should respond to the form window being resized (debatable, Windows Explorer doesn't do this, and it has pros and cons)
+- The columns should respond to the form window being resized. (This behavior is questionable. Windows Explorer doesn't do this, and the behavior has pros and cons.)
 - fill all space made available to the control when the parent window resizes
 - The original column widths should be selected in a way that respects the lengths of all the strings in the column
 - The user should be able to resize the columns.
